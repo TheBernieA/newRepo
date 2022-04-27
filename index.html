@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn1">Button 1</button>
+    <h1 class="ciao"></h1>
+    <button class="btn2">Button 2</button>
+    <h1 class="hello-world"></h1>
+
+    <script>
+        const ciao = document.querySelector('.ciao')
+        const hWorld = document.querySelector('.hello-world')
+        
+        document.querySelector('.btn1').addEventListener('click', (e)=>{
+            e.preventDefault()
+            ciao.innerHTML = 'CIAO'
+        })
+        document.querySelector('.btn2').addEventListener('click', (e)=>{
+            e.preventDefault()
+            hWorld.innerHTML = 'Hello World'
+        })
+    </script>
+</body>
+</html>
